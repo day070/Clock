@@ -12,11 +12,14 @@ section {
   align-items: center;
   justify-content: center;
   background: #4fcfaf;
+  padding: 0 20px;
+  transition: all 0.4s ease;
 }
-
-section .container {
+section.dark {
+  background-color: #24292d;
+}
+section .containe {
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 220px;
   max-width: 560px;
@@ -24,19 +27,49 @@ section .container {
   background: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
+  position: relative;
+}
+section.dark .containe {
+  background: #323840;
+}
+section .containe .iconss i {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  height: 30px;
+  width: 30px;
+  background: #24292d;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+}
+section.dark .containe .iconss i {
+  background: #fff;
+  color: #323840;
+}
+.containe .iconss i.bi-sun-fill {
+  opacity: 0;
+  pointer-events: none;
+}
+section.dark .containe .iconss i.bi-sun-fill {
+  opacity: 1;
+  pointer-events: auto;
 }
 
-section .container .time {
+section .containe .timee {
   display: flex;
   align-items: center;
 }
 
-.container .time .time-colon {
+.containe .timee .timee-colon {
   display: flex;
   align-items: center;
   position: relative;
 }
-.time .time-colon .am_pm {
+.timee .timee-colon .am_pm {
   position: absolute;
   top: 0;
   right: -50px;
@@ -44,7 +77,7 @@ section .container .time {
   font-weight: 700;
   letter-spacing: 1px;
 }
-.time .time-colon .time-text {
+.timee .timee-colon .timee-texk {
   height: 100px;
   width: 100px;
   display: flex;
@@ -55,17 +88,17 @@ section .container .time {
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
-.time .time-colon .time-text,
-.time .time-colon .colon {
+.timee .timee-colon .timee-texk,
+.timee .timee-colon .colon {
   font-size: 35px;
   font-weight: 600;
 }
-.time .time-colon .colon {
+.timee .timee-colon .colon {
   font-size: 40px;
   margin: 0 10px;
 }
 
-.time .time-colon .time-text .text {
+.timee .timee-colon .timee-texk .texk {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 2px;
