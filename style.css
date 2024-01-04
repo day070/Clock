@@ -19,7 +19,7 @@ section .container {
   align-items: center;
   justify-content: center;
   height: 220px;
-  max-width: 550px;
+  max-width: 560px;
   width: 100%;
   background: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -34,6 +34,15 @@ section .container .time {
 .container .time .time-colon {
   display: flex;
   align-items: center;
+  position: relative;
+}
+.time .time-colon .am_pm {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 .time .time-colon .time-text {
   height: 100px;
@@ -50,6 +59,10 @@ section .container .time {
 .time .time-colon .colon {
   font-size: 35px;
   font-weight: 600;
+}
+.time .time-colon .colon {
+  font-size: 40px;
+  margin: 0 10px;
 }
 
 .time .time-colon .time-text .text {
