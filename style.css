@@ -57,6 +57,7 @@ section.dark .containe .iconss i {
 section.dark .containe .iconss i.bi-sun-fill {
   opacity: 1;
   pointer-events: auto;
+  font-size: 16px;
 }
 
 section .containe .timee {
@@ -88,14 +89,32 @@ section .containe .timee {
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+section.dark .timee-colon .timee-texk {
+  background: #24292d;
+}
 .timee .timee-colon .timee-texk,
 .timee .timee-colon .colon {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+section.dark .timee .timee-texk .num,
+section.dark .timee .colon {
+  color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
 .timee .timee-colon .colon {
   font-size: 40px;
   margin: 0 10px;
+}
+.timee .timee-colon .texk {
+  font-size: 40px;
+  margin: 0 10px;
+}
+
+section.dark .timee .timee-colon .texk {
+  color: #fff;
 }
 
 .timee .timee-colon .timee-texk .texk {
