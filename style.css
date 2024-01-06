@@ -78,6 +78,9 @@ section .containe .timee {
   font-weight: 700;
   letter-spacing: 1px;
 }
+section.dark .timee .timee-colon .am_pm {
+  color: #fff;
+}
 .timee .timee-colon .timee-texk {
   height: 100px;
   width: 100px;
